@@ -1,0 +1,24 @@
+
+public class Costofmaterials{
+	float ar;
+	public void Choice(String mt_strd,int area,boolean c) {
+		if (mt_strd=="standardmaterials") {
+			ar=1200*area;
+			System.out.format(" total cost is: %f ",ar);
+		}
+		if (mt_strd=="abovestandardmaterials") {
+			ar=1500*area;
+			System.out.format(" total cost is: %f ",ar);
+		}
+		if (mt_strd=="highstandardmaterials" && c==false) {
+			ar=1800*area;
+			System.out.format(" total cost is: %f ",ar);
+		}
+		if (mt_strd=="highstandardmaterials" && c==true) {
+			ar=2500*area;
+			System.out.format("total cost is :%f ",ar);
+		}
+		
+	}
+	
+}

@@ -1,0 +1,16 @@
+import java.util.*;
+public class Calinterst {
+	public  float p,t,r;
+	public float s;
+	public void SimpleInterest(int p,int t,int r) {
+		s=(p*t*r)/100;
+		System.out.format("simple interest is: %f",s);
+		
+	}
+	float c;
+	public void CompoundInterest(int p,int t,int r) {
+		c=(float) ((p*Math.pow((1+(r/100)),t)));
+		System.out.format("\n compound interest is: %f",c);
+	}
+	}
+
